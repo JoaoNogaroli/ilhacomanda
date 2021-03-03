@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script src="/static/app.js"></script>
+    <link rel="stylesheet" href="/static/logado.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <header style="text-align: center;">
+        <h1>Bem vindo: <a id="nome"></a></h1>  
+        <hr>
+    </header>
+    
+    <div class="todo">
+        <div class="esquerda">
+            
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+            <h3> Nome da Mesa</h3>
+            <input type="text" id="texto_mesa" placeholder="Ex: Mesa" value="Mesa">
+            <input type="text" id="num_mesa" placeholder="Ex: 01"><br>
+            <input type="submit" class="btn" value="Adicionar Mesa" onclick="mesa()">
+        </div>
+        <div id="meio" class="meio">
+            <div id="input_meio" class="input_meio">
+                
+                <form id="formulario">
+                    
+                    
+                    <div class='botoes'>
+                    <input class="inp_btn" type="button" id="btn_radio_mesa_ver" value='Ver' onclick="ver()">
+                    <input class="inp_btn" type="button" id="btn_radio_mesa_apagar" value='Apagar' hidden>
+                    </div>
+
+                </form>
+                   
+                
+
+            </div>
+           
+            
+        </div>
+        <div class="direita"></div>
+    </div>
+
+
+    <footer></footer>       
+    <script src="/static/logado.js"></script>
+</body>
+</html>
