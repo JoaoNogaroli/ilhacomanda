@@ -47,7 +47,10 @@ function logar(){
             // Signed in
             // ...
             window.alert("LOGADO: " + log_email.value)
-            window.location.href = "http://127.0.0.1:5000/logado"
+            //TESTE
+            //window.location.href = "http://127.0.0.1:5000/logado"
+            // PRODUCAÇÂo
+            window.location.href = "https://ilhacomanda.herokuapp.com/logado"
         })
         .catch((error) => {
             var errorCode = error.code;
